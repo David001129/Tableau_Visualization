@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0611.2007                               -->
+<workbook original-version='18.1' source-build='2023.2.0 (20232.23.0611.2007)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='transactions (boston_checkbook)' inline='true' name='federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='127.0.0.1' name='mysql.0y4c2vl0hgr6tc12xei6o0ofkea4'>
+            <connection class='mysql' dbname='boston_checkbook' odbc-native-protocol='' one-time-sql='' port='3306' server='127.0.0.1' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.0y4c2vl0hgr6tc12xei6o0ofkea4' name='transactions' table='[transactions]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.0y4c2vl0hgr6tc12xei6o0ofkea4' name='transactions' table='[transactions]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>FY</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[FY]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>FY</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Voucher</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Voucher]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Voucher</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Voucher_Line</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Voucher_Line]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Voucher_Line</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distribution_Line</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Distribution_Line]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Distribution_Line</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entered</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Entered]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Entered</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month_Number</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Month_Number]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Month_Number</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal_Month</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Fiscal_Month]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Fiscal_Month</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Fiscal_Year]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Fiscal_Year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vendor_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vendor_Name]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Vendor_Name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Account]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Account</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Account_Descr</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Account_Descr]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Account_Descr</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dept</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dept]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Dept</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dept_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dept_Name]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Dept_Name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>c6_Digit_Org_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[c6_Digit_Org_Name]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>c6_Digit_Org_Name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monetary_Amount</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[Monetary_Amount]</local-name>
+            <parent-name>[transactions]</parent-name>
+            <remote-alias>Monetary_Amount</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions_D805C6D4076A45FFA87D66F2AA89705D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Account Descr' datatype='string' name='[Account_Descr]' role='dimension' type='nominal' />
+      <column caption='Dept Name' datatype='string' name='[Dept_Name]' role='dimension' type='nominal' />
+      <column caption='Distribution Line' datatype='integer' name='[Distribution_Line]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[FY]' role='dimension' type='quantitative' />
+      <column caption='Fiscal Month' datatype='integer' name='[Fiscal_Month]' role='dimension' type='quantitative' />
+      <column caption='Fiscal Year' datatype='integer' name='[Fiscal_Year]' role='dimension' type='quantitative' />
+      <column caption='Monetary Amount' datatype='real' name='[Monetary_Amount]' role='measure' type='quantitative' />
+      <column caption='Month Number' datatype='integer' name='[Month_Number]' role='dimension' type='quantitative' />
+      <column caption='Vendor Name' datatype='string' name='[Vendor_Name]' role='dimension' type='nominal' />
+      <column caption='Voucher Line' datatype='integer' name='[Voucher_Line]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='transactions' datatype='table' name='[__tableau_internal_object_id__].[transactions_D805C6D4076A45FFA87D66F2AA89705D]' role='measure' type='quantitative' />
+      <column caption='c6 Digit Org Name' datatype='string' name='[c6_Digit_Org_Name]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='transactions' id='transactions_D805C6D4076A45FFA87D66F2AA89705D'>
+            <properties context=''>
+              <relation connection='mysql.0y4c2vl0hgr6tc12xei6o0ofkea4' name='transactions' table='[transactions]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Vendor Transaction Change'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transactions (boston_checkbook)' name='federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl'>
+            <column caption='Vendor Name' datatype='string' name='[Vendor_Name]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='transactions' datatype='integer' name='[__tableau_internal_object_id__].[transactions_D805C6D4076A45FFA87D66F2AA89705D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[transactions_D805C6D4076A45FFA87D66F2AA89705D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:transactions_D805C6D4076A45FFA87D66F2AA89705D:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='transactions' datatype='table' name='[__tableau_internal_object_id__].[transactions_D805C6D4076A45FFA87D66F2AA89705D]' role='measure' type='quantitative' />
+            <column-instance column='[Vendor_Name]' derivation='None' name='[none:Vendor_Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[none:Vendor_Name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[transactions_D805C6D4076A45FFA87D66F2AA89705D])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Vendor_Name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[none:Vendor_Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[__tableau_internal_object_id__].[cnt:transactions_D805C6D4076A45FFA87D66F2AA89705D:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[none:Vendor_Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[__tableau_internal_object_id__].[cnt:transactions_D805C6D4076A45FFA87D66F2AA89705D:qk]' scope='rows' value='Transactions ' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[__tableau_internal_object_id__].[cnt:transactions_D805C6D4076A45FFA87D66F2AA89705D:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[none:Vendor_Name:nk]' />
+              <text column='[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[__tableau_internal_object_id__].[cnt:transactions_D805C6D4076A45FFA87D66F2AA89705D:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[__tableau_internal_object_id__].[cnt:transactions_D805C6D4076A45FFA87D66F2AA89705D:qk]</rows>
+        <cols>[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[none:Vendor_Name:nk]</cols>
+      </table>
+      <simple-id uuid='{6B7D0F68-4121-4BF3-A8CD-6ABF33381F81}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Vendor Transaction Change'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[none:Vendor_Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hy7ilj0ubxvlu1cyg15g1bz2fwl].[none:Vendor_Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ACBD24E3-A46F-4204-B881-68EF64F5237F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Vendor Transaction Change' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
